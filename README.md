@@ -14,8 +14,8 @@ The goals / steps of this project are the following: Make a pipeline that finds 
 [image3]: ./examples/hough.png "hough"
 [image4]: ./examples/merged1.png "Color 1"
 [image5]: ./examples/merged2.png "Color 2"
-[video1]: ./test_videos_output/solidWhiteRight.mp4 "line1"
-[video2]: ./test_videos_output/solidYellowLeft.mp4 "line2"
+[video1]: ./examples/video1.gif "Color 2"
+
 
 
 ---
@@ -29,18 +29,22 @@ instead of long line.
 The pipline is made of several steps: 
 
 * convert the image to gray scale 8 bit
+
 ![alt text][image1]
 
 * blur the image to remove noise then apply canny edge detection method
+
 ![alt text][image2]
 
 * masking then applying hough transform to find lane lines:
+
 ![alt text][image3]
 
 * Overlying the detected lanes over the image 
+
 ![alt text][image4]
 
-#### Improving draw_lines function 
+### **Improving draw_lines function** 
 
 Conecting discontinous lines can be done by extrapolating the slope of each line and its intercept . Then the 
 average of all the slopes and intercepts will give approximatly a connected line over the dashes. 
@@ -48,10 +52,12 @@ average of all the slopes and intercepts will give approximatly a connected line
 ![alt text][image5]
 
 
-#### applying it on a video 
+### **applying it on a video**
+
 A video is just a series of images 
-![alt text][video1]
-![alt text][video2]
+
+
+<img src="./examples/video1.gif " width="370">
 
 
 ### 2. Identify potential shortcomings with your current pipeline
