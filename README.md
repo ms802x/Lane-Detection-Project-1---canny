@@ -28,42 +28,42 @@ This repository is the first project for Auto Driving Cars Nano Degree by Audaci
 The pipline is made of several steps: 
 
 * convert the image to gray scale 8 bit:
- <center>
+<p align="center">
 <img src="./examples/grayscale.jpg" >
- </center>
+</p>
 
 
 * blur the image to remove noise then apply canny edge detection method
- <center>
+<p align="center">
 <img src="./examples/edge.png" >
- </center>
+</p>
 
 * masking then applying hough transform to find lane lines:
- <center>
+<p align="center">
 <img src="./examples/hough.png" >
- </center>
+</p>
 
 * Overlying the detected lanes over the image 
- <center>
+<p align="center">
 <img src="./examples/merged1.png" >
-</center>
+</p>
 
 ### **Improving draw_lines function** 
 
 Conecting discontinous lines can be done by extrapolating the slope of each line and its intercept . Then the 
 average of all the slopes and intercepts will give approximatly a connected line over the dashes. 
- <center>
+<p align="center">
 <img src="./examples/merged2.png" >
- </center>
+</p>
 
 
 ### **applying it on a video**
 
 A video is just a series of images 
 
- <center>
+<p align="center">
 <img src="./examples/video1.gif " width="370">
- </center>
+</p>
 
 
 ### 2. Identify potential shortcomings with your current pipeline
